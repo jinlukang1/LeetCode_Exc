@@ -6,11 +6,11 @@ ifstream fin("input.txt");
 ofstream fout("output.txt");
 int count = 0;
 
-double solve(int n){//µİ¹éµÄ½øĞĞ 
-	count++;//ÖÁÉÙÓĞÒ»¸ö 
+double solve(int n){//é€’å½’çš„è¿›è¡Œ 
+	count++;//è‡³å°‘æœ‰ä¸€ä¸ª 
 	for(int i = 2; i <= n/2; i++)
 	{
-		if(n%i==0) solve(i);// i -> n/iÒ²ÊÇ¿ÉÒÔµÄ 
+		if(n%i==0) solve(i);// i -> n/iä¹Ÿæ˜¯å¯ä»¥çš„ 
 	}
 }
 
